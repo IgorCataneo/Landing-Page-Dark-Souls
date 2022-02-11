@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap'); 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    color: #fff;
+    background-color: #050302;   
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    width: 100%;
+    max-width: 1903px;
+}
+
+.header-image {
+    width: 7.4%;
+}
+
+.header-nav {
+    display: flex;
+    gap: 32px;
+    cursor: pointer;
+}
+
+.header-nav-item {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 2.0rem;
+    font-weight: 550;
+}
+
+.header-nav-item:hover {
+    color: pink;
+}
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.3px solid #fff;
+    width: 100%;
+    max-width: 1903px;
+    
+}
+
+.conteudo-primario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 175px;
+    padding-top: 34px;
+}
+
+.conteudo-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+
+.conteudo-escrito-titulo {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 550;
+    font-size: 6.4rem;
+}
+
+.conteudo-escrito-subtitulo {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 550;
+    font-size: 3.3rem;
+}
+
+.conteudo-escrito-botao {
+    background-color:  #808080;
+    width: 180px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.conteudo-escrito-botao:hover {
+    background-color: rosybrown;
+    color:  #fff;
+    box-shadow: 5px 5px pink, -5px -5px pink;
+}
+    
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 76px;
+    margin-top: 85px;
+    border-top: 0.3px solid #fff;
+    padding-top: 30px;
+
+}
+
+
+.conteudo-escrito1 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-secundario-titulo {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 550;
+    font-size: 5.3rem;
+    
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 550;
+    font-size: 3.1rem;
+    text-align: center;
+}
+
+
+
+.footer {
+    padding: 32px;
+    border-top: 0.3px solid #fff;
+    width: 100%;
+    max-width: 1903px;
+}
+
+.footer-img {
+    display: block;
+    width: 35%;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 995px) {
+    html {
+    font-size: 50%;
+    }
+
+    .conteudo-primario {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .conteudo-img {
+        order: -1;
+    }
+
+    .conteudo-escrito-botao {
+        margin: 0 auto;
+    }
+
+    .img-fogueira {
+        width: 80%;
+     }
+}
+
+
+@media (max-width: 1341px) {
+    .conteudo-primario {
+        padding-left: 50px;
+    }
+
+    .conteudo-img {
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 1288px) {
+    .conteudo-secundario-titulo {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1220px) {
+    .header-image {
+        width: 7.8%;
+    }
+}
+
+@media (max-width: 1007px) {
+    html {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 845px) {
+    .header-image {
+        width: 11%;
+    }
+}
+
+
+@media (max-width: 665px) {
+    .header-image {
+        width: 13%;
+    }
+}
+
+@media (max-width: 555px) {
+    .header-image {
+        width: 14%;
+    }
+}
+
+
+@media (max-width: 597px) {
+    .conteudo-img {
+        width: 75%;
+    }
+
+}
+
+@media (max-width: 546px) {
+
+    html {
+        font-size: 45%;
+        }
+
+    .conteudo-img {
+        width: 85%;
+    }
+
+    .conteudo-primario {
+        gap: 90px;
+        padding-right: 30px;
+    }
+
+    .header-image {
+        width: 15%;
+    }
+    
+}
+
+@media (max-width: 398px) {
+
+    html {
+        font-size: 35%;
+        }
+
+    .conteudo-escrito-subtitulo {
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 356px) {
+
+    html {
+        font-size: 28%;
+    }
+}
